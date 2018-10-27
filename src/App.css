@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background: blue;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -18,10 +28,29 @@
   font-size: 1.5em;
 }
 
+.messagesDisplay{
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  background: white;
+  border: 2px dashed #ccc;
+  margin: 10px;
+}
+
+.messagesDisplay > p {
+  border-radius: 10px;
+  width: auto;
+  margin: 3px;
+  padding: 2px;
+  background: whitesmoke;
+  
+}
+
 .App-intro {
   font-size: large;
 }
-
+h2{
+  height: 80px;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
